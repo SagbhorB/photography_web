@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portal - Nature</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="nature.html">Nature</a></li>
+                <li><a href="astro.html">Astrophotography</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Nature Photography</h1>
+            <p>Share your beautiful landscape and nature photographs</p>
+            
+            <div class="photo-grid" id="photoGallery">
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b" alt="Mountain Lake">
+                    <div class="photo-info">
+                        <h3>Mountain Lake Reflection</h3>
+                        <p class="photographer">By: @john_nature</p>
+                        <p>Perfect mirror reflection of mountains in a crystal clear lake</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" alt="Forest Path">
+                    <div class="photo-info">
+                        <h3>Sunlit Forest</h3>
+                        <p class="photographer">By: @sarah_photos</p>
+                        <p>Sunlight streaming through dense forest canopy</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe" alt="Mountain Waterfall">
+                    <div class="photo-info">
+                        <h3>Cascading Waters</h3>
+                        <p class="photographer">By: @mike_landscapes</p>
+                        <p>Majestic waterfall flowing down rocky cliffs</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1505765050516-f72dcac9c60e" alt="Mountain Peak">
+                    <div class="photo-info">
+                        <h3>Mountain Majesty</h3>
+                        <p class="photographer">By: @emma_adventure</p>
+                        <p>Snow-capped peaks reaching into the clouds</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="register-form" id="uploadForm">
+                <h2>Upload Nature Photo</h2>
+                <p style="margin-bottom: 20px;">You must be registered and logged in to upload photos</p>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="title">Photo Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" name="description" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="photo">Select Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    
+                    <button type="submit">Upload Photo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

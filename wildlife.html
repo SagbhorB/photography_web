@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portal - Wildlife</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="nature.html">Nature</a></li>
+                <li><a href="astro.html">Astrophotography</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+                <li><a href="architecture.html">Architecture</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Wildlife Photography</h1>
+            <p>Share your amazing wildlife photographs</p>
+            
+            <div class="photo-grid" id="photoGallery">
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1549366021-9f761d450615" alt="Lion">
+                    <div class="photo-info">
+                        <h3>Majestic Lion</h3>
+                        <p class="photographer">By: @wildlife_pro</p>
+                        <p>Male lion with magnificent mane resting in golden savanna grass</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e" alt="Tiger">
+                    <div class="photo-info">
+                        <h3>Bengal Tiger</h3>
+                        <p class="photographer">By: @tiger_tracker</p>
+                        <p>Stunning tiger walking through shallow water in morning light</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44" alt="Elephant">
+                    <div class="photo-info">
+                        <h3>Gentle Giants</h3>
+                        <p class="photographer">By: @safari_lens</p>
+                        <p>Mother elephant and baby walking together across African plains</p>
+                    </div>
+                </div>
+
+                <div class="photo-card">
+                    <img src="https://images.unsplash.com/photo-1611689342806-0863700ce1e4" alt="Eagle">
+                    <div class="photo-info">
+                        <h3>Eagle's Gaze</h3>
+                        <p class="photographer">By: @bird_watcher</p>
+                        <p>Close-up portrait of a bald eagle's intense stare</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="register-form" id="uploadForm">
+                <h2>Upload Wildlife Photo</h2>
+                <p style="margin-bottom: 20px;">You must be registered and logged in to upload photos</p>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="title">Photo Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <input type="text" id="description" name="description" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="photo">Select Photo:</label>
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                    
+                    <button type="submit">Upload Photo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
